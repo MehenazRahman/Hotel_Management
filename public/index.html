@@ -1,0 +1,1175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hotel Royal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Hotel Royal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Room
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#room">Room</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="room_details.html">Room Details</a></li>
+                            <li><a class="dropdown-item" href="room_details2.html">Room Details 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">F.A.Qs</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="restaurant.html">Restaurant</a></li>
+                            <li><a class="dropdown-item" href="services.html">Services</a></li>
+                            <li><a class="dropdown-item" href="reviews.html">reviews</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>               
+                <a href="room_details.html">
+                    <button class="book-btn" type="button">Book Now</button>
+                </a>       
+                <a href="login.html" class="login-icon">
+                    <i class="fas fa-sign-in-alt"></i>
+                </a>
+                <a href="register.html" class="register-icon">
+                    <i class="fas fa-user-plus"></i>
+                </a>                         
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-area-bg" id="home">
+        <div class="hero-area d-flex align-items-center">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <div class="hero-content text-center">
+                            <h4>The Best Luxyry Hotel</h4>
+                            <h1>The Best Luxurius</h1>
+                            <h2>Hotel In UK</h2>
+                            <div class="hero-button">
+                               <a href="about.html">Explore more <i class="fi fi-ts-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <section class="booking-section">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-9">
+                    <form action="#" class="booking-form">
+                        <ul>
+                            <li>
+                                <div class="booking-field p-relative c-name">
+                                    <label>CHECK-IN</label>
+                                    <input type="date" id="checkin" name="date" class="datepicker">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="booking-field p-relative c-name">
+                                    <label>CHECK-OUT</label>
+                                    <input type="date" id="checkout" name="date" class="datepicker">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="booking-field p-relative c-name">
+                                    <label>Adult</label>
+                                    <select name="adults" id="adu">
+                                        <option value="sports-massage">Adult</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="booking-field p-relative c-name">
+                                    <label>Children</label>
+                                    <select name="children" id="children">
+                                        <option value="sports-massage">Children</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="slider-btn">
+                                    <button class="btn check-btn" onclick="window.location.href='your-link-here';">Check Availability</button>
+                                </div>                                
+                            </li>
+                        </ul>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="room-area" id="room">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center">
+                        <h4>Rooms & Suites</h4>
+                        <h1>our best room and suites <br> luxury hotels</h1>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row col-lg-12 col-md-6 col-sm-12">
+                <div class="col-lg-4">
+                    <div class="single-room-box">
+                        <div class="single-room-thumb">
+                            <img src="assets/room-1.jpg" alt="">
+                        </div>
+                        <div class="room-icon">
+                            <a class="place venobox vbox-item" data-gall="lace-imgs" href="assets/room-1.jpg">
+                                <i class="fi fi-br-copy-image"></i>
+                            </a>
+                        </div>
+                        <div class="room-content">
+                            <h4>Delux Family Rooms</h4>
+                            <ul>
+                                <li><i class="fi fi-br-check"></i>500 SQ.FT/Rooms</li>
+                                <li><i class="fi fi-br-check"></i>2 King Size Bed</li>
+                                <li><i class="fi fi-br-check"></i>5+ Guests Allowed</li>
+                            </ul>
+                        </div>
+                        <div class="room-bottom">
+                            <div class="room-button">
+                                <a href="room-details.html">view details<i class="bi bi-plus"></i></a>
+                            </div>
+                            <div class="room-rewiew">
+                                <ul>
+                                    <li><i class="fi fi-ss-star"></i></li>
+                                    <li><i class="fi fi-ss-star"></i></li>
+                                    <li><i class="fi fi-ss-star"></i></li>
+                                    <li><i class="fi fi-ss-star"></i></li>
+                                    <li><i class="fi fi-ss-star-sharp-half"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-room-box">
+                        <div class="single-room-thumb">
+                            <img src="assets/room-2.jpg" alt="">
+                        </div>
+                        <div class="room-icon">
+                            <a class="place venobox vbox-item" data-gall="lace-imgs" href="assets/room-1.jpg">
+                                <i class="fi fi-br-copy-image"></i>
+                            </a>
+                        </div>
+                        <div class="room-content">
+                            <h4>Family Rooms</h4>
+                            <ul>
+                                <li><i class="fi fi-br-check"></i>400 SQ.FT/Rooms</li>
+                                <li><i class="fi fi-br-check"></i>2 King Size Bed</li>
+                                <li><i class="fi fi-br-check"></i>5+ Guests Allowed</li>
+                            </ul>
+                        </div>
+                        <div class="room-bottom">
+                            <div class="room-button">
+                                <a href="room-details.html">view details<i class="bi bi-plus"></i></a>
+                            </div>
+                            <div class="room-rewiew">
+                                <ul>
+                                    <li><i class="fi fi-ss-star"></i></li>
+                                    <li><i class="fi fi-ss-star"></i></li>
+                                    <li><i class="fi fi-ss-star"></i></li>
+                                    <li><i class="fi fi-ss-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-room-box">
+                        <div class="single-room-thumb">
+                            <img src="assets/room-3.png" alt="">
+                        </div>
+                        <div class="room-icon">
+                            <a class="place venobox vbox-item" data-gall="lace-imgs" href="assets/room-1.jpg">
+                                <i class="fi fi-br-copy-image"></i>
+                            </a>
+                        </div>
+                        <div class="room-content">
+                            <h4>Superior Rooms</h4>
+                            <ul>
+                                <li><i class="fi fi-br-check"></i>600 SQ.FT/Rooms</li>
+                                <li><i class="fi fi-br-check"></i>2 King Size Bed</li>
+                                <li><i class="fi fi-br-check"></i>5+ Guests Allowed</li>
+                            </ul>
+                        </div>
+                        <div class="room-bottom">
+                            <div class="room-button">
+                                <a href="room-details.html">view details<i class="bi bi-plus"></i></a>
+                            </div>
+                            <div class="room-rewiew">
+                                <ul>
+                                    <li><i class="fi fi-ss-star"></i></li>
+                                    <li><i class="fi fi-ss-star"></i></li>
+                                    <li><i class="fi fi-ss-star"></i></li>
+                                    <li><i class="fi fi-ss-star"></i></li>
+                                    <li><i class="fi fi-ss-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-room-box">
+                        <div class="single-room-thumb">
+                            <img src="assets/room-4.jpg" alt="">
+                        </div>
+                        <div class="room-icon">
+                            <a class="place venobox vbox-item" data-gall="lace-imgs" href="assets/room-1.jpg">
+                                <i class="fi fi-br-copy-image"></i>
+                            </a>
+                        </div>
+                        <div class="room-content">
+                            <h4>Delux Rooms</h4>
+                            <ul>
+                                <li><i class="fi fi-br-check"></i>500 SQ.FT/Rooms</li>
+                                <li><i class="fi fi-br-check"></i>2 King Size Bed</li>
+                                <li><i class="fi fi-br-check"></i>3+ Guests Allowed</li>
+                            </ul>
+                        </div>
+                        <div class="room-bottom">
+                            <div class="room-button">
+                                <a href="room-details.html">view details<i class="bi bi-plus"></i></a>
+                            </div>
+                            <div class="room-rewiew">
+                                <ul>
+                                    <li><i class="fi fi-ss-star"></i></li>
+                                    <li><i class="fi fi-ss-star"></i></li>
+                                    <li><i class="fi fi-ss-star"></i></li>
+                                    <li><i class="fi fi-ss-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-room-box">
+                        <div class="single-room-thumb">
+                            <img src="assets/room-5.jpg" alt="">
+                        </div>
+                        <div class="room-icon">
+                            <a class="place venobox vbox-item" data-gall="lace-imgs" href="assets/room-1.jpg">
+                                <i class="fi fi-br-copy-image"></i>
+                            </a>
+                        </div>
+                        <div class="room-content">
+                            <h4>Junior Suite</h4>
+                            <ul>
+                                <li><i class="fi fi-br-check"></i>800 SQ.FT/Rooms</li>
+                                <li><i class="fi fi-br-check"></i>2 King Size Bed</li>
+                                <li><i class="fi fi-br-check"></i>5+ Guests Allowed</li>
+                            </ul>
+                        </div>
+                        <div class="room-bottom">
+                            <div class="room-button">
+                                <a href="room-details.html">view details<i class="bi bi-plus"></i></a>
+                            </div>
+                            <div class="room-rewiew">
+                                <ul>
+                                    <li><i class="fi fi-ss-star"></i></li>
+                                    <li><i class="fi fi-ss-star"></i></li>
+                                    <li><i class="fi fi-ss-star"></i></li>
+                                    <li><i class="fi fi-ss-star"></i></li>
+                                    <li><i class="fi fi-ss-star-sharp-half"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-room-box">
+                        <div class="single-room-thumb">
+                            <img src="assets/room-6.jpg" alt="">
+                        </div>
+                        <div class="room-icon">
+                            <a class="place venobox vbox-item" data-gall="lace-imgs" href="assets/room-1.jpg">
+                                <i class="fi fi-br-copy-image"></i>
+                            </a>
+                        </div>
+                        <div class="room-content">
+                            <h4>Executive Suite</h4>
+                            <ul>
+                                <li><i class="fi fi-br-check"></i>800 SQ.FT/Rooms</li>
+                                <li><i class="fi fi-br-check"></i>2 King Size Bed</li>
+                                <li><i class="fi fi-br-check"></i>5+ Guests Allowed</li>
+                            </ul>
+                        </div>
+                        <div class="room-bottom">
+                            <div class="room-button">
+                                <a href="room-details.html">view details<i class="bi bi-plus"></i></a>
+                            </div>
+                            <div class="room-rewiew">
+                                <ul>
+                                    <li><i class="fi fi-ss-star"></i></li>
+                                    <li><i class="fi fi-ss-star"></i></li>
+                                    <li><i class="fi fi-ss-star"></i></li>
+                                    <li><i class="fi fi-ss-star"></i></li>
+                                    <li><i class="fi fi-ss-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-area" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-thumb">
+                        <img src="assets/about-bg.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6  upper">
+                    <div class="section-title">
+                        <h4>About Luxury Hotel </h4>
+                        <h1>Luxury Best Hotel In UK</h1>
+                        <p class="section-desc-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Blanditiis voluptatem quibusdam perspiciatis? Quis perferendis 
+                            at, officiis laudantium earum, sed corrupti atque minima quae 
+                            delectus, nulla repellendus! Nobis natus eveniet sapiente.
+                        </p>
+                    </div>
+                    <div class="about-counter-row">
+                        <div class="about-conuter-box">
+                            <div class="about-counter-content">
+                                <h4 class="about-counter">250+</h4>
+                                <p>Luxury Rooms</p>
+                            </div>
+                        </div>
+                        <div class="about-conuter-box">
+                            <div class="about-counter-content">
+                                <h4 class="about-counter">4.9</h4>
+                                <p>Customer Ratings</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="amenities-area" id="facilities">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-header text-center">
+                        <h4>Hotel Facilities</h4>
+                        <h1>Our Hotel’s Facilities</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="single-amenity-box">
+                        <div class="amenity-icon">
+                            <img src="assets/facilities-1.png" alt="">
+                        </div>
+                        <div class="amenity-content">
+                            <h4>Air Condition</h4>
+                        </div>
+                    </div>
+                </div>			
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="single-amenity-box">
+                        <div class="amenity-icon">
+                            <img src="assets/facilities-2.png" alt="">
+                        </div>
+                        <div class="amenity-content">
+                            <h4>Speed Internet</h4>
+                        </div>
+                    </div>
+                </div>			
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="single-amenity-box">
+                        <div class="amenity-icon">
+                            <img src="assets/facilities-3.png" alt="">
+                        </div>
+                        <div class="amenity-content">
+                            <h4>Breakfast</h4>
+                        </div>
+                    </div>
+                </div>			
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="single-amenity-box">
+                        <div class="amenity-icon">
+                            <img src="assets/facilities-4.png" alt="">
+                        </div>
+                        <div class="amenity-content">
+                            <h4>Gym Center</h4>
+                        </div>
+                    </div>
+                </div>			
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="single-amenity-box">
+                        <div class="amenity-icon">
+                            <img src="assets/facilities-5.png" alt="">
+                        </div>
+                        <div class="amenity-content">
+                            <h4>Smart Lock</h4>
+                        </div>
+                    </div>
+                </div>			
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="single-amenity-box">
+                        <div class="amenity-icon">
+                            <img src="assets/facilities-6.png" alt="">
+                        </div>
+                        <div class="amenity-content">
+                            <h4>Swimming Pool</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-title">
+                        <h4>Watch Our Hotel</h4>
+                        <h1>Promotional Video</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Sapiente in ullam quae itaque deserunt blanditiis, voluptas 
+                            ad numquam? Consequuntur autem doloribus dicta est dolorem 
+                            dolorum ratione excepturi tenetur nihil alias.
+                        </p>
+                    </div>
+                    <div class="video-button">
+                        <a class="video-vemo-icon venobox vbox-item" data-vbtype="youtube" data-autoplay="true" href="https://www.youtube.com/watch?v=1fDn7a4TvwI"><i class="fi fi-ts-play-circle"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section-services padding-tb-50" id="services">
+        <div class="container">
+            <div class="row mb-minus-24">
+                <div class="col-12">
+                    <div class="rx-banner text-center rx-banner-effects">
+                        <h4>Our Services</h4>
+                        <h1>Our Best <span>Services</span></h1>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb-24 rx-575-50">
+                    <div class="rx-services">
+                        <div class="services-ico">
+                            <img src="assets/service-1.png" alt="">
+                        </div>
+                        <div class="services-contact">
+                            <h5>Basic Facilities</h5>
+                            <ul>
+                                <li>- Reception/Front Desk</li>
+                                <li>- Room Service</li>
+                                <li>- Housekeeping</li>
+                                <li>- Wi-Fi &amp; Parking</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb-24 rx-575-50">
+                    <div class="rx-services">
+                        <div class="services-ico">
+                            <img src="assets/service-2.png" alt="">
+                        </div>
+                        <div class="services-contact">
+                            <h5>Room Amenities</h5>
+                            <ul>
+                                <li>- Comfortable Bedding</li>
+                                <li>- Bathroom &amp; Pool</li>
+                                <li>- Tv, Ac &amp; Heathing</li>
+                                <li>- Mini Bar &amp; Safe</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb-24 rx-575-50">
+                    <div class="rx-services">
+                        <div class="services-ico">
+                            <img src="assets/service-3.png" alt="">
+                        </div>
+                        <div class="services-contact">
+                            <h5>Dining Options</h5>
+                            <ul>
+                                <li>- Restaurant &amp; Cafe</li>
+                                <li>- Bar &amp; Lounge</li>
+                                <li>- Cafe &amp; Canteen</li>
+                                <li>- Room service</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb-24 rx-575-50">
+                    <div class="rx-services">
+                        <div class="services-ico">
+                            <img src="assets/service-4.png" alt="">
+                        </div>
+                        <div class="services-contact">
+                            <h5>Leisure Facilities</h5>
+                            <ul>
+                                <li>- Swimming pool</li>
+                                <li>- Gym / Fitness center</li>
+                                <li>- Spa &amp; Beauty</li>
+                                <li>- Sauna &amp; Steam Room</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb-24 rx-575-50">
+                    <div class="rx-services">
+                        <div class="services-ico">
+                            <img src="assets/service-5.png" alt="">
+                        </div>
+                        <div class="services-contact">
+                            <h5>Business Services</h5>
+                            <ul>
+                                <li>- Conference Hall</li>
+                                <li>- Meeting Rooms</li>
+                                <li>- Business Center</li>
+                                <li>- Wi-Fi &amp; Internet</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb-24 rx-575-50">
+                    <div class="rx-services">
+                        <div class="services-ico">
+                            <img src="assets/service-6.png" alt="">
+                        </div>
+                        <div class="services-contact">
+                            <h5>Family Facilities</h5>
+                            <ul>
+                                <li>- Kids Club</li>
+                                <li>- Babysitting Services</li>
+                                <li>- Family Rooms</li>
+                                <li>- Game zone</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb-24 rx-575-50">
+                    <div class="rx-services">
+                        <div class="services-ico">
+                            <img src="assets/service-7.png" alt="">
+                        </div>
+                        <div class="services-contact">
+                            <h5>Additional Services</h5>
+                            <ul>
+                                <li>- Concierge</li>
+                                <li>- Laundry &amp; Dry Cleaning</li>
+                                <li>- Shuttle Service</li>
+                                <li>- Pet-Friendly</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb-24 rx-575-50">
+                    <div class="rx-services">
+                        <div class="services-ico">
+                            <img src="assets/service-8.png" alt="">
+                        </div>
+                        <div class="services-contact">
+                            <h5>Special Features</h5>
+                            <ul>
+                                <li>- Custom Rooms</li>
+                                <li>- Garden &amp; Golf</li>
+                                <li>- Terrace</li>
+                                <li>- Event Spaces</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="offer-section-padding" id="offer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-12 ps-lg-5 mt-md-5">
+                    <div class="offer-section__content">
+                        <p class="section__subheader">Special Offer</p>
+                        <h2 class="section__header">Enjoy The Offer</h2>
+                        <p class="section__description">
+                            Suspendisse commodo bibendum purus at hendrerit. Vivamus aliquam bibendum fringilla.
+                            Praesent cursus felis nunc, quis vulputate sapien posuere vitae. Aliquam erat volutpat.
+                            Cras egestas porta massa eget pulvinar. Cras non enim et dui pharetra hendrerit mattis.
+                        </p>
+                        <p class="section__description-2">
+                            PAYMENT OPTIONS :
+                        </p>
+                        <ul class="payment">
+                            <li><a href="#"><i class="fa-brands fa-cc-visa"></i></li>
+                            <li><a href="#"><i class="fa-brands fa-cc-paypal"></i></li>
+                            <li><a href="#"><i class="fab fa-cc-mastercard"></i></a></li>
+                            <li><a href="#"><i class="fab fa-cc-stripe"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-12 ps-lg-5 mt-md-5">
+                    <div class="circle">
+                        <div class="content">
+                            <h6>UP TO</h6>
+                            <h1>30%</h1>
+                            <p>On Selected Rooms</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="count-section" id="#offer">
+        <div class="counter-wrapper">
+            <div class="counter">
+                <h1 class="count" data-target="120">0+</h1>
+                <p>New Listing Every Week</p>
+            </div>
+            <div class="counter">
+                <h1 class="count" data-target="220">0+</h1>
+                <p>New Visitors Every Week</p>
+            </div>
+            <div class="counter">
+                <h1 class="count" data-target="540">0+</h1>
+                <p>Exceptional Food</p>
+            </div>
+            <div class="counter">
+                <h1 class="count" data-target="2560">0+</h1>
+                <p>Happy customers every year</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+        <div class="container gal-container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12 ps-lg-5 mt-md-5">
+                    <div class="gallery-section__content">
+                        <h2 class="section__header">Our Gallery</h2>
+                        <h1 class="section__subheader">Explore Our Hotel</h1>
+                        <p class="section__description">
+                            Excepteur sint occaecat cupidatat non proident sunt in culpa qui
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                    <img src="assets/gallery-1.jpg" class="w-100 shadow-1-strong rounded mb-4" />
+
+                    <img src="assets/gallery-2.jpg" class="w-100 shadow-1-strong rounded mb-4" />
+                </div>
+
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="assets/gallery-3.jpg" class="w-100 shadow-1-strong rounded mb-4" />
+
+                    <img src="assets/room-2.jpg" class="w-100 shadow-1-strong rounded mb-4" />
+                </div>
+
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="assets/gallery-6.jpg" class="w-100 shadow-1-strong rounded mb-4" />
+
+                    <img src="assets/gallery-5.jpg" class="w-100 shadow-1-strong rounded mb-4" />
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <img src="assets/gallery-4.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Image 1" />
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <img src="assets/room-6.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Image 2" />
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <img src="assets/room-3.png" class="w-100 shadow-1-strong rounded mb-4" alt="Image 3" />
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    
+    <section class="testimonial-section" id="review">
+        <div class="container">
+            <div class="col-12">
+                <div class="rx-banner text-center rx-banner-effects">
+                    <h4>Testimonial</h4>
+                    <h1>What Our Client Say</span></h1>
+                </div>
+            </div>
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-sm-12">			
+                        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                                <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                                <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+                            </ol>   
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="testimonial">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante.</p>
+                                            </div>
+                                            <div class="media">
+                                                <img src="assets/test-1.jpg" class="me-3" alt="">
+                                                <div class="media-body">
+                                                    <div class="overview">
+                                                        <div class="name"><b>Paula Wilson</b></div>
+                                                        <div class="details">Media Analyst
+                                                            <ul class="list-inline">
+                                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>										
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="testimonial">
+                                                <p>Vestibulum quis quam ut magna consequat faucibu. Eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat faucibus quam.</p>
+                                            </div>
+                                            <div class="media">
+                                                <img src="assets/test-2.jpg" class="me-3" alt="">
+                                                <div class="media-body">
+                                                    <div class="overview">
+                                                        <div class="name"><b>Antonio Moreno</b></div>
+                                                        <div class="details">Web Developer</div>
+                                                        <div class="star-rating">
+                                                            <ul class="list-inline">
+                                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>										
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>			
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="testimonial">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante.</p>
+                                            </div>
+                                            <div class="media">
+                                                <img src="assets/test-3.jpg" class="me-3" alt="">
+                                                <div class="media-body">
+                                                    <div class="overview">
+                                                        <div class="name"><b>Michael Holz</b></div>
+                                                        <div class="details">Web Developer</div>											
+                                                        <div class="star-rating">
+                                                            <ul class="list-inline">
+                                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>										
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="testimonial">
+                                                <p>Vestibulum quis quam ut magna consequat faucibu. Eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat faucibus quam.</p>
+                                            </div>
+                                            <div class="media">
+                                                <img src="assets/test-4.jpg" class="me-3" alt="">
+                                                <div class="media-body">
+                                                    <div class="overview">
+                                                        <div class="name"><b>Mary Saveley</b></div>
+                                                        <div class="details">Graphic Designer / MarsMedia</div>
+                                                        <div class="star-rating">
+                                                            <ul class="list-inline">
+                                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>										
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>			
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="testimonial">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante.</p>
+                                            </div>
+                                            <div class="media">
+                                                <img src="assets/test-5.jpg" class="me-3" alt="">
+                                                <div class="media-body">
+                                                    <div class="overview">
+                                                        <div class="name"><b>Martin Sommer</b></div>
+                                                        <div class="details">SEO Analyst</div>
+                                                        <div class="star-rating">
+                                                            <ul class="list-inline">
+                                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>										
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="testimonial">
+                                                <p>Vestibulum quis quam ut magna consequat faucibu. Eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat faucibus quam.</p>
+                                            </div>
+                                            <div class="media">
+                                                <img src="assets/test-6.jpg" class="me-3" alt="">
+                                                <div class="media-body">
+                                                    <div class="overview">
+                                                        <div class="name"><b>John Williams</b></div>
+                                                        <div class="details">Web Designer</div>
+                                                        <div class="star-rating">
+                                                            <ul class="list-inline">
+                                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>										
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>			
+                                </div>
+                            </div>
+                            <!-- Carousel controls -->
+                            <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+                                <i class="fa fa-chevron-left"></i>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+                                <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <div class="contact-area inner-style" id="contact">
+        <div class="container">
+            <div class="row add-background">
+                <div class="col-lg-6">
+                    <div class="section-title">
+                        <h4>Contact us</h4>
+                        <h1>Contact With Us</h1>
+                        <p class="section-desc-2">Rapidiously myocardinate cross-platform intellectual capital after the
+                            model. Appropriately create interactive infrastructures after maintance
+                            Holisticly facilitate stand-alone
+                        </p>
+                    </div>
+                    <div class="single-contact-box">
+                        <div class="contact-icon">
+                            <i class="fi fi-ts-phone-call"></i>
+                        </div>
+                        <div class="contact-title">
+                            <h4>Call Us Now</h4>
+                            <p>+980 436 (5374) 652</p>
+                        </div>
+                    </div>
+                    <div class="single-contact-box">
+                        <div class="contact-icon">
+                            <i class="fi fi-ts-envelopes"></i>
+                        </div>
+                        <div class="contact-title">
+                            <h4>Sent Email</h4>
+                            <p>hotelroyal@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="single-contact-box">
+                        <div class="contact-icon">
+                            <i class="fi fi-ts-marker"></i>
+                        </div>
+                        <div class="contact-title">
+                            <h4>Our Locations</h4>
+                            <p>Sector 4, Uttara<br>Dhaka - 1230</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form action="" method="POST" id="dreamit-form">
+                        <div class="single-contact-form">
+                            <div class="contact-content">
+                                <h4>Get In Touch</h4>
+                            </div>
+                            <div class="single-input-box">
+                                <input type="text" name="Name" placeholder="Your Name" required="">
+                            </div>
+                            <div class="single-input-box">
+                                <input type="text" name="Email" placeholder="Enter Your Email" required="">
+                            </div>
+                            <div class="single-input-box">
+                                <input type="text" name="Name" placeholder="Subject" required="">
+                            </div>
+                            <div class="single-input-box">
+                                <textarea name="Message" id="Message" placeholder="Write Message"></textarea>
+                            </div>
+                            <div class="single-input-box">
+                                <button type="submit">Sent Message</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="status"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <section class="faqs" id="faq">
+        <div class="col-lg-12 col-md-12 col-12 ps-lg-5 mt-md-5">
+            <div class="rx-banner text-center rx-banner-effects">
+                <h4>Faqs</h4>
+                <h1>Frequently Asked Questions</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="image">
+                <img src="assets/test-bg.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="box">
+                    <h3>How can I confirm that you have received my reservation?
+                        <span class="icon">+</span>
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam cupiditate mollitia.</p>
+                </div>
+        
+                <div class="box">
+                    <h3>Up to what age are they considered children?
+                        <span class="icon">+</span>
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam cupiditate mollitia.</p>
+                </div>
+        
+                <div class="box">
+                    <h3>Do you have any discount code?
+                        <span class="icon">+</span>
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam cupiditate mollitia.</p>
+                </div>
+        
+                <div class="box">
+                    <h3>How can I get in touch with my hotel?
+                        <span class="icon">+</span>
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam cupiditate mollitia.</p>
+                </div>
+        
+                <div class="box">
+                    <h3>On the last day, can I leave the room later?
+                        <span class="icon">+</span>
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam cupiditate mollitia.</p>
+                </div>
+    
+                <div class="box">
+                    <h3>How can I pay for my booking?
+                        <span class="icon">+</span>
+                    </h3>
+                    <p>We accept Visa, MasterCard, and American Express credit and debit cards for your convenience.</p>
+                </div>
+                <div class="box">
+                    <h3>Do you have hotels with a spa?
+                        <span class="icon">+</span>
+                    </h3>
+                    <p>Lorem ut nisl quam nestibulum ac quam nec odio elementum sceisue the aucan ligula. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="footer-widget-logo">
+                        <a class="footer-widget-logo" href="index.html">Hotel Royal</a>
+                    </div>
+    
+                    <p class="footer-desc">Rapidiously myocardinate crossing the hotella
+                        model. Appropriately create interesting area
+                        Holisticly facilitat place done.</p>
+    
+                    <div class="footear-contact">
+                        <span><i class="fi fi-sr-call-incoming"></i> +980 (1234) 567 220</span>
+                    </div>
+                    <div class="footer-widget-social-icon">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="footer-widget-content upper">
+                        <div class="footer-widget-title">
+                            <h4>Useful Links</h4>
+                        </div>
+                        <div class="footer-widget-menu">
+                            <ul>
+                                <li><a href="about.html">About Hotel</a></li>
+                                <li><a href="room-list.html">Rooms &amp; Suites</a></li>
+                                <li><a href="service-details.html">Reservations</a></li>
+                                <li><a href="blog-details.html">News &amp; Blogs</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer-widget-content">
+                        <div class="footer-widget-title add">
+                            <h4>Gallery</h4>
+                        </div>
+                        <div class="footer-widget-gallery">
+                            <a class="place venobox vbox-item" data-gall="lace-imgs"
+                                href="assets/gallery-1.jpg"><img src="assets/gallery-1.jpg"
+                                    alt=""></a>
+                            <a class="place venobox vbox-item" data-gall="lace-imgs"
+                                href="assets/room-1.jpg"><img src="assets/room-1.jpg"
+                                    alt=""></a>
+                            <a class="place venobox vbox-item" data-gall="lace-imgs"
+                                href="assets/gallery-3.jpg"><img src="assets/gallery-3.jpg"
+                                    alt=""></a>
+                            <a class="place venobox vbox-item" data-gall="lace-imgs"
+                                href="assets/gallery-4.jpg"><img src="assets/gallery-4.jpg"
+                                    alt=""></a>
+                            <a class="place venobox vbox-item" data-gall="lace-imgs"
+                                href="assets/gallery-5.jpg"><img src="assets/gallery-5.jpg"
+                                    alt=""></a>
+                            <a class="place venobox vbox-item" data-gall="lace-imgs"
+                                href="assets/gallery-6.jpg"><img src="assets/gallery-6.jpg"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer-widget-content">
+                        <div class="footer-widget-title">
+                            <h4>Newsletter</h4>
+                        </div>
+                        <p>Subscribe our Newsletter</p>
+                        <form action="#">
+                            <div class="single-newsletter-box">
+                                <input type="text" name="Email" placeholder="Enter E-Mail" required="">
+                                <button type="submit">Subscribe Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row aa-boder align-items-center">
+                <div class="col-md-6 col-lg-6">
+                    <div class="footer-bottom-content">
+                        <h4>© 2024, Company Name. All Rights Reserved.</h4>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="footer-bottom-content">
+                        <ul>
+                            <li><a href="#">Terms &amp; Condition</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script>
+        
+    </script>
+  </body>
+</html>

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Include FontAwesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" />
+
+    <!-- swiper js cdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="room.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Hotel Royal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Room
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#room">Room</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="room_details.html">Room Details</a></li>
+                            <li><a class="dropdown-item" href="room_details2.html">Room Details 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">F.A.Qs</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="restaurant.html">Restaurant</a></li>
+                            <li><a class="dropdown-item" href="services.html">Services</a></li>
+                            <li><a class="dropdown-item" href="reviews.html">reviews</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <a href="room_details.html">
+                    <button class="book-btn" type="button">Book Now</button>
+                </a>                               
+            </div>
+        </div>
+    </nav>
+
+    <div class="wpo-breadcumb-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="wpo-breadcumb-wrap">
+                        <h2>Room Details</h2>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><span>/ Room Details 2</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="room_details2-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-3 cold-sm-12 col-xs-12">
+                    <div class="room_details-content">
+                        <p class="section__subheader">Room details</p>
+                        <h2 class="section__header">Overview</h2>
+                        <p class="section__description">
+                            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis 
+                            suscipit laboriosam, nisi ut aliqu id etx ea commodi consequatur? 
+                            Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam 
+                            nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas 
+                            nulla pariatur. Ut enim ad minima veniam, quis nostrum exercitationem.
+                        </p>
+                        <p class="section__description">
+                            Tullam corporis suscipit laboriosam, nisi ut aliqu id etx ea commodi consequatur? 
+                            Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil 
+                            molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
+                            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+                            nisi ut aliqu id etx ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in 
+                            ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat 
+                            quo voluptas nulla pariatur.
+                        </p>
+                    </div>
+
+                    <div class="pricing-area">
+                        <div class="room-title">
+                            <h2>Pricing Plans</h2>
+                        </div>
+                        <div class="pricing-table">
+                            <table class="table-responsive pricing-wrap">
+                                <thead>
+                                    <tr>
+                                        <th>Mon</th>
+                                        <th>Tue</th>
+                                        <th>Wed</th>
+                                        <th>Thu</th>
+                                        <th>Fri</th>
+                                        <th>Sat</th>
+                                        <th>Sun</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>$299</td>
+                                        <td>$299</td>
+                                        <td>$299</td>
+                                        <td>$299</td>
+                                        <td>$299</td>
+                                        <td>$299</td>
+                                        <td>$299</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="room-details-service">
+                        <div class="row">
+                            <div class="room-details-item">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-5">
+                                        <div class="room-d-text">
+                                            <div class="room-facilities-title">
+                                                <h2>Amenities</h2>
+                                            </div>
+                                            <ul>
+                                                <li><span><i class="fi fi-ss-check-circle"></i>Refrigerator and water</span></li>
+                                                <li><span><i class="fi fi-ss-check-circle"></i>Air Conditioner Facilities</span></li>
+                                                <li><span><i class="fi fi-ss-check-circle"></i>Fruits are always available</span></li>
+                                                <li><span><i class="fi fi-ss-check-circle"></i>2 Sets of nightwear</span></li>
+                                                <li><span><i class="fi fi-ss-check-circle"></i>Tables and Chairs</li>
+                                                <li><span><i class="fi fi-ss-check-circle"></i>2 Elevator Available</li>
+                                                <li><span><i class="fi fi-ss-check-circle"></i>Room Side Belcony</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-7">
+                                        <div class="room-d-img">
+                                            <img src="asset/room-5.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-7">
+                                        <div class="room-d-img">
+                                            <img src="asset/room-6.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-5">
+                                        <div class="room-d-text2">
+                                            <div class="room-facilities-title">
+                                                <h2>Room Services</h2>
+                                            </div>
+                                            <ul>
+                                                <li><span><i class="fi fi-ss-check-circle"></i>Daily Cleaning</span></li>
+                                                <li><span><i class="fi fi-ss-check-circle"></i>Special Swimming Pool</span></li>
+                                                <li><span><i class="fi fi-ss-check-circle"></i>Free Parking</span></li>
+                                                <li><span><i class="fi fi-ss-check-circle"></i>Free-to-use smartphone</span></li>
+                                                <li><span><i class="fi fi-ss-check-circle"></i>Free Wifi</span></li>
+                                                <li><span><i class="fi fi-ss-check-circle"></i>2 Elevator Available</span></li>
+                                                <li><span><i class="fi fi-ss-check-circle"></i>Room Side Belcony</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 cold-sm-6 col-xs-12">
+                    <div class="widget check-widget">
+                        <h3>Check Availability</h3>
+                        <form>
+                            <div class="input-group date">
+                                <input type="text" placeholder="Enter Your Name">
+                            </div>
+                            <div class="input-group date">
+                                <input type="text" placeholder="Enter Your Phone No.">
+                            </div>
+                            <div class="input-group date">
+                                <input autocomplete="off" type="text" id="datepicker" placeholder="Check in" class="hasDatepicker">
+                                <i class="fi fi-rr-calendar-lines"></i>
+                            </div>
+
+                            <div class="input-group date">
+                                <input autocomplete="off" type="text" id="datepicker2" placeholder="Check Out" class="hasDatepicker">
+                                <i class="fi fi-rr-calendar-lines"></i>
+                            </div>
+                            <div class="input-group date">
+                                <select name="Rooms" id="Rooms">
+                                    <option value="">Rooms</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                            </div>
+                            <div class="input-group date">
+                                <select name="Adults" id="Adults">
+                                    <option value="">Adults</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                </select>
+                            </div>
+                            <div class="input-group date">
+                                <select name="Children" id="Children">
+                                    <option value="">Children</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                </select>
+                            </div>
+                            <div class="input-group date">
+                                <button class="theme-btn" type="submit">Check Availability</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="sidebar-widget recent-news">
+                        <div class="main-title-2">
+                            <h1>Recent Posts</h1>
+                        </div>
+                        <div class="recent-news-item mb-3">
+                            <div class="thumb">
+                                <a href="#">
+                                    <img src="asset/room-2.jpg" alt="small-img">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h3 class="media-heading">
+                                    <a href="rooms-details.html">Host a Family Party</a>
+                                </h3>
+                                <div class="listing-post-meta">
+                                    $299.00 | <a href="#"><i class="fa fa-calendar"></i> Aug 7, 2024</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recent-news-item mb-3">
+                            <div class="thumb">
+                                <a href="#">
+                                    <img src="asset/room-3.jpg" alt="small-img">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h3 class="media-heading">
+                                    <a href="rooms-details.html">Room with View</a>
+                                </h3>
+                                <div class="listing-post-meta">
+                                    $259.00 | <a href="#"><i class="fa fa-calendar"></i> Aug 7, 2024</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recent-news-item">
+                            <div class="thumb">
+                                <a href="#">
+                                    <img src="asset/room-4.jpg" alt="small-img">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h3 class="media-heading">
+                                    <a href="rooms-details.html">Double Room</a>
+                                </h3>
+                                <div class="listing-post-meta">
+                                    $299.00 | <a href="#"><i class="fa fa-calendar"></i> Aug 7, 2024</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="map-area">
+                        <div class="room-map">
+                            <h2>Location</h2>
+                        </div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.0360288337!2d-74.30932404622044!3d40.697539970339214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1723021237386!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <div class="footer-area">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="footer-widget-logo">
+                    <a class="footer-widget-logo" href="index.html">Hotel Royal</a>
+                </div>
+
+                <p class="footer-desc">Rapidiously myocardinate crossing the hotella
+                    model. Appropriately create interesting area
+                    Holisticly facilitat place done.</p>
+
+                <div class="footear-contact">
+                    <span><i class="fi fi-br-call-incoming"></i> +980 (1234) 567 220</span>
+                </div>
+                <div class="footer-widget-social-icon">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+                <div class="footer-widget-content upper">
+                    <div class="footer-widget-title">
+                        <h4>Useful Links</h4>
+                    </div>
+                    <div class="footer-widget-menu">
+                        <ul>
+                            <li><a href="about.html">About Hotel</a></li>
+                            <li><a href="room-list.html">Rooms &amp; Suites</a></li>
+                            <li><a href="service-details.html">Reservations</a></li>
+                            <li><a href="blog-details.html">News &amp; Blogs</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="footer-widget-content">
+                    <div class="footer-widget-title add">
+                        <h4>Gallery</h4>
+                    </div>
+                    <div class="footer-widget-gallery">
+                        <a class="place venobox vbox-item" data-gall="lace-imgs"
+                            href="assets/gallery-1.jpg"><img src="assets/gallery-1.jpg"
+                                alt=""></a>
+                        <a class="place venobox vbox-item" data-gall="lace-imgs"
+                            href="assets/room-1.jpg"><img src="assets/room-1.jpg"
+                                alt=""></a>
+                        <a class="place venobox vbox-item" data-gall="lace-imgs"
+                            href="assets/gallery-3.jpg"><img src="assets/gallery-3.jpg"
+                                alt=""></a>
+                        <a class="place venobox vbox-item" data-gall="lace-imgs"
+                            href="assets/gallery-4.jpg"><img src="assets/gallery-4.jpg"
+                                alt=""></a>
+                        <a class="place venobox vbox-item" data-gall="lace-imgs"
+                            href="assets/gallery-5.jpg"><img src="assets/gallery-5.jpg"
+                                alt=""></a>
+                        <a class="place venobox vbox-item" data-gall="lace-imgs"
+                            href="assets/gallery-6.jpg"><img src="assets/gallery-6.jpg"
+                                alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="footer-widget-content">
+                    <div class="footer-widget-title">
+                        <h4>Newsletter</h4>
+                    </div>
+                    <p>Subscribe our Newsletter</p>
+                    <form action="#">
+                        <div class="single-newsletter-box">
+                            <input type="text" name="Email" placeholder="Enter E-Mail" required="">
+                            <button type="submit">Subscribe Now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row aa-boder align-items-center">
+            <div class="col-md-6 col-lg-6">
+                <div class="footer-bottom-content">
+                    <h4>© 2024, Company Name. All Rights Reserved.</h4>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <div class="footer-bottom-content">
+                    <ul>
+                        <li><a href="#">Terms &amp; Condition</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            flatpickr("#datepicker", {
+              dateFormat: "m/d/Y",
+              minDate: "today", 
+            });
+            flatpickr("#datepicker2", {
+              dateFormat: "m/d/Y",
+              minDate: new Date().fp_incr(1)
+            });
+          });
+          
+          
+    </script>
+
+</body>
+
+</html>
